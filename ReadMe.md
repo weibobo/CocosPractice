@@ -4,5 +4,7 @@
 
 ### 现有什么？
 
-* BrushBoard: 手刷板
+* __BrushBoard__: 手刷板
 <img src="ScreenShot/Example_BrushBoard.png"/>
+* __BlackBoard__: 黑板
+<img src="ScreenShot/Example_BlackBoard.png"/>
