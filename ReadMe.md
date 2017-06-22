@@ -8,3 +8,5 @@
 <img src="ScreenShot/Example_BrushBoard.png"/>
 * __BlackBoard__: 黑板
 <img src="ScreenShot/Example_BlackBoard.png"/>
+* __RippleSprite__: 水纹
+<img src="ScreenShot/Example_RippleSprite.png"/>
