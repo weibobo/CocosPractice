@@ -10,3 +10,5 @@
 <img src="ScreenShot/Example_BlackBoard.png"/>
 * __RippleSprite__: 水纹
 <img src="ScreenShot/Example_RippleSprite.png"/>
+* __ExplodeSprite__: 消散
+<img src="ScreenShot/Example_ExplodeSprite.png"/>
