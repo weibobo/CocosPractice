@@ -12,3 +12,5 @@
 <img src="ScreenShot/Example_RippleSprite.png"/>
 * __ExplodeSprite__: 消散
 <img src="ScreenShot/Example_ExplodeSprite.png"/>
+* __Lightning__: 闪电
+<img src="ScreenShot/Example_Lightning.png"/>
