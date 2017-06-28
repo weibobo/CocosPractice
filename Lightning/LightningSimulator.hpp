@@ -6,6 +6,12 @@
 #include <vector>
 
 /*
+auto node = LightningSimulator::create("lightingSeg.png", Vec2(-320, 0), Vec2(320, 0));
+node->setPosition(Vec2(winSize.width/2,winSize.height/2));
+node->runAction(RepeatForever::create(Sequence::create(DelayTime::create(0.5f), CallFunc::create([node](){
+    node->genLightning();
+}), nullptr)));
+addChild(node);
  */
 
 USING_NS_CC;
@@ -29,10 +35,10 @@ public:
     virtual ~LightningSimulator();
     static LightningSimulator* create(const std::string &filename, const Vec2& start, const Vec2& end);
     virtual bool init(const std::string &filename, const Vec2& start, const Vec2& end);
-    
+
     virtual void draw(cocos2d::Renderer *renderer, const cocos2d::Mat4 &transform, uint32_t flags) override;
     void onDraw(const cocos2d::Mat4 &transform, uint32_t flags);
-    
+
     void genLightning();
 
     virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *unused_event);
@@ -40,18 +46,18 @@ public:
     virtual void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *unused_event);
 protected:
     cocos2d::CustomCommand _customCommand;
-    
+
     void genSegments();
     void genMeshes();
 private:
     TrianglesCommand::Triangles _meshes = {nullptr, nullptr, 0, 0};
     GLuint _buffersVBO[2];
-    
+
     Vec2 _posStart;
     Vec2 _posEnd;
-    
+
     vector<Segment> _segmentList;
-    
+
     float _segOffsetFactor = 0.2f;
     float _splitPercent = 0.5f;
     int _genDepth = 5;
